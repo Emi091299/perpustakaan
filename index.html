@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Sistem Manajemen Perpustakaan</h1>
+    </header>
+    <nav>
+        <a href="#login">Masuk</a>
+        <a href="#register">Daftar</a>
+        <a href="#borrow">Peminjaman Buku</a>
+        <a href="#manage">Kelola Data</a>
+    </nav>
+    <div class="container" id="login">
+        <h2>Masuk</h2>
+        <form>
+            <div class="form-group">
+                <label for="username">Nama Pengguna:</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Kata Sandi:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <button type="submit">Masuk</button>
+        </form>
+    </div>
+    <div class="container" id="register">
+        <h2>Daftar Anggota Baru</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Nama Lengkap:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="password">Kata Sandi:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <button type="submit">Daftar</button>
+        </form>
+    </div>
+    <div class="container" id="borrow">
+        <h2>Peminjaman Buku</h2>
+        <form>
+            <div class="form-group">
+                <label for="member-id">ID Anggota:</label>
+                <input type="text" id="member-id" name="member-id">
+            </div>
+            <div class="form-group">
+                <label for="book-id">ID Buku:</label>
+                <input type="text" id="book-id" name="book-id">
+            </div>
+            <button type="submit">Pinjam</button>
+        </form>
+    </div>
+    <div class="container" id="manage">
+        <h2>Kelola Data</h2>
+        <div class="table-container">
+            <h3>Data Buku</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID Buku</th>
+                        <th>Judul</th>
+                        <th>Penulis</th>
+                        <th>Ketersediaan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Judul Buku 1</td>
+                        <td>Penulis 1</td>
+                        <td>Tersedia</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Judul Buku 2</td>
+                        <td>Penulis 2</td>
+                        <td>Tidak Tersedia</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-container">
+            <h3>Data Anggota</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID Anggota</th>
+                        <th>Nama</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Nama Anggota 1</td>
+                        <td>email1@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Nama Anggota 2</td>
+                        <td>email2@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
